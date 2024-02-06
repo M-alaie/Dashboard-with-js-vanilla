@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@24,400,0,0"
     />
-    <link rel="stylesheet" href="./assets/style/style.css"/>
+    <link rel="stylesheet" href="./assets/style/style.css" />
   </head>
 
   <body>
@@ -18,18 +18,18 @@
         <div class="top">
           <div class="logo">
             <img
-            src="./assets/images/logo.png"
-            class="img_logo"
-            alt="admin-logo"
-          />
-          <h2>EGA<span class="danger">TOR</span></h2>
+              src="./assets/images/logo.png"
+              class="img_logo"
+              alt="admin-logo"
+            />
+            <h2>EGA<span class="danger">TOR</span></h2>
           </div>
-          
+
           <div class="close_btn" id="closed">
             <span class="material-symbols-sharp"> close </span>
           </div>
         </div>
-      
+
         <div class="sidebar">
           <a href="#" class="active">
             <span class="material-symbols-sharp"> dashboard </span>
@@ -48,12 +48,10 @@
             <h2>analytics</h2>
           </a>
           <a href="#">
-            <span class="material-symbols-sharp"> mail 
-              
-            </span>
+            <span class="material-symbols-sharp"> mail </span>
 
             <h2>messages</h2>
-            <span>26</span>
+            <span class="notify">26</span>
           </a>
           <a href="#">
             <span class="material-symbols-sharp"> inventory </span>
@@ -67,23 +65,251 @@
             <span class="material-symbols-sharp"> settings </span>
             <h2>Setting</h2>
           </a>
-         
+
           <a href="#">
-            <span class="material-symbols-sharp">
-              add
-              </span>
+            <span class="material-symbols-sharp"> add </span>
             <h2>Add Products</h2>
           </a>
           <a href="#">
-            <span class="material-symbols-sharp">
-              logout
-              </span>
+            <span class="material-symbols-sharp"> logout </span>
             <h2>logout</h2>
           </a>
-          
         </div>
       </aside>
-     
+
+      <!-- END Aside -->
+      <!-- Main  -->
+      <main>
+        <h1>Dashboard</h1>
+        <div class="date">
+          <input type="date" aria-label="date" class="input_date" />
+        </div>
+        <div class="insights">
+          <div class="sales">
+            <span class="material-symbols-sharp"> finance </span>
+            <div class="middle">
+              <div class="left">
+                <h2 class="total">Total Sales</h2>
+                <h1>25.5$</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                  <p class="number">%81</p>
+                </svg>
+              </div>
+            </div>
+            <div>
+              <small class="text_muted">last 24 hours</small>
+            </div>
+          </div>
+          <!-- END SALES -->
+          <div class="expanses">
+            <span class="material-symbols-sharp"> area_chart </span>
+            <div class="middle">
+              <div class="left">
+                <h2 class="total">Total Expanses</h2>
+                <h1>87.5$</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                  <p class="number">%60</p>
+                </svg>
+              </div>
+            </div>
+            <small class="text_muted">last 24 hours</small>
+          </div>
+          <!-- END expance -->
+          <div class="income">
+            <span class="material-symbols-sharp"> database </span>
+            <div class="middle">
+              <div class="left">
+                <h2 class="total">Total Income</h2>
+                <h1>10.835$</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                  <p class="number">%44</p>
+                </svg>
+              </div>
+            </div>
+            <small class="text_muted">last 24 hours</small>
+          </div>
+          <!-- END TOTOAL -->
+        </div>
+
+        <div class="recent_order">
+          <h1>Reacent Order</h1>
+          <table>
+            <thead>
+              <tr>
+                <th>Product Name</th>
+                <th>Product Number</th>
+                <th>Payment</th>
+                <th>Status</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Shampo</td>
+                <td>85620</td>
+                <td>10$</td>
+                <td class="warning">Panding</td>
+                <td><a href="#" class="primary">Details</a></td>
+              </tr>
+              <tr>
+                <td>Shampo</td>
+                <td>85620</td>
+                <td>10$</td>
+                <td class="danger">Declined</td>
+                <td><a href="#" class="primary">Details</a></td>
+              </tr>
+              <tr>
+                <td>Shampo</td>
+                <td>85620</td>
+                <td>10$</td>
+                <td class="warning">Panding</td>
+                <td><a href="#" class="primary">Details</a></td>
+              </tr>
+              <tr>
+                <td>Shampo</td>
+                <td>85620</td>
+                <td>10$</td>
+                <td class="success">Deliverd</td>
+                <td><a href="#" class="primary">Details</a></td>
+              </tr>
+            </tbody>
+          </table>
+          <a href="#" class="primary">Show More</a>
+        </div>
+      </main>
+
+      <div class="right">
+        <div class="top">
+          <div class="toggle_menu">
+            <span class="material-symbols-sharp"> menu </span>
+          </div>
+          <div class="toggle_theme">
+            <span class="material-symbols-sharp active"> light_mode </span>
+            <span class="material-symbols-sharp"> dark_mode </span>
+          </div>
+          <div class="user">
+            <div class="info">
+              <p>Hey,<b>Morteza</b></p>
+              <small class="text_muted">Admin</small>
+            </div>
+            <div class="user_img">
+              <img
+                src="./assets/images/profile-1.jpg"
+                alt="img user Not Found"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="recent_update">
+          <h1>Recent Update</h1>
+          <div class="updates">
+            <div class="update">
+              <div class="img_profile">
+                <img src="./assets/images/profile-2.jpg" alt="" />
+              </div>
+              <div class="info">
+                <p>
+                  <strong>Mike Tyson</strong> reclied his order of night lion
+                  tech GPS drone
+                </p>
+                <small class="text_muted">2 Minutes ago</small>
+              </div>
+            </div>
+            <div class="update">
+              <div class="img_profile">
+                <img src="./assets/images/profile-3.jpg" alt="" />
+              </div>
+              <div class="info">
+                <p>
+                  <strong>Diana Ayi</strong> Declined his order of 2 DJI Air 25.
+                </p>
+                <small class="text_muted">5 Minutes ago</small>
+              </div>
+            </div>
+            <div class="update">
+              <div class="img_profile">
+                <img src="./assets/images/profile-4.jpg" alt="" />
+              </div>
+              <div class="info">
+                <p></p>
+                <p><strong>Mondyrey</strong> reciveed his order of LA</p>
+                <small class="text_muted">6 Minutes ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+          <!-- End Recent Update -->
+
+          <div class="sales_analytices">
+            <h1>Sales Analytics</h1>
+            <!-- online order -->
+
+            <div class="item ">
+              <div class="icon online">
+                <span class="material-symbols-sharp">
+                  shopping_cart
+                  </span>
+              </div>
+              <div class="info">
+                <h2>ONLINE ORDERS</h2>
+                <small class="text_muted">Last 24 Hours</small>
+              </div>
+              <p class="success">+32%</p>
+              <strong>3849</strong>
+            </div>
+            <!-- end online order -->
+
+            <!-- offline order -->
+            <div class="item ">
+              <div class="icon offline">
+                <span class="material-symbols-sharp">
+                  shopping_bag
+                  </span>
+              </div>
+              <div class="info">
+                <h2>OFFLINE ORDERS</h2>
+                <small class="text_muted">Last 24 Hours</small>
+              </div>
+              <p class="danger">-17%</p>
+              <strong>250</strong>
+            </div>
+            <!-- END OF OFFLINE ORDER -->
+
+            <!-- customers -->
+            <div class="item customer">
+              <div class="icon customer">
+                <span class="material-symbols-sharp">
+                  person_add
+                  </span>
+              </div>
+              <div class="info">
+                <h2>New CUSTOMER</h2>
+                <small class="text_muted">Last 24 Hours</small>
+              </div>
+              <p class="success">+20%</p>
+              <strong>3849</strong>
+            </div>
+
+            <div class="item new_product">
+                <div class="icon">
+                  <span class="material-symbols-sharp">
+                    add
+                    </span>
+                    <h2>New Product</h2>
+                </div>
+            </div>
+            <!-- END COUSTOMER -->
+          </div>
+      </div>
     </div>
   </body>
 </html>
