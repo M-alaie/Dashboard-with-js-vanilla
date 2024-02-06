@@ -26,6 +26,16 @@
 
     --box-shadow: 0 2rem 3rem var(--color-light);
 }
+.dark_mode_varabile{
+    --color-background: #181a1e;
+    --color-white:#202528;
+    --color-dark:#edeffd;
+    --color-dark-light:white;
+    --color-light:rgba(0,0,0,0.4);
+    --box-shadow:0 2rem 3rem var(var(--color-light))
+    
+
+}
 
 a {
     color: var(--color-dark);
@@ -40,21 +50,26 @@ img {
 h1 {
     font-weight: 800;
     font-size: 1.25rem;
+    color: var(--color-dark);
 }
 
 h2 {
     font-size: 1rem;
     font-weight: 700;
+    color: var(--color-dark);
 }
 
 h5 {
     font-size: 0.77rem;
+    color: var(--color-dark-light);
 }
 
 small {
+    color: var(--color-dark-light);
     font-size: 0.75rem;
 }
-strong{
+
+strong {
     font-weight: 700;
 }
 
@@ -91,6 +106,9 @@ p {
 
 .success {
     color: var(--color-success);
+}
+th , td{
+    color: var(--color-dark);
 }
 
 * {
@@ -132,7 +150,7 @@ body {
 aside {
     /* background: var(--color-white); */
     height: 100vh;
-    position:static;
+    position: static;
 }
 
 aside .top {
@@ -149,6 +167,9 @@ aside .top .logo {
     justify-content: space-between;
     align-items: center;
     gap: 0.8rem;
+}
+aside .top .logo h2{
+    color: var(--color-dark);
 }
 
 aside .top .logo img {
@@ -167,7 +188,7 @@ aside .sidebar {
     flex-direction: column;
     margin-top: 0.5rem;
     gap: 1rem;
-    background-color: white;
+  
     height: 100vh;
     position: relative;
     top: 2rem;
@@ -195,7 +216,7 @@ aside .sidebar a span {
 
 aside .sidebar a:last-child {
     position: absolute;
-    bottom:8rem;
+    bottom: 8rem;
 
     width: 100%;
 }
@@ -234,6 +255,9 @@ aside .sidebar a .notify {
 
 main {
     margin: 1.6rem;
+}
+main h1{
+    color: var(--color-dark);
 }
 
 main .date {
@@ -278,6 +302,10 @@ main .insights .sales:first-child span {
     font-size: 2rem;
     padding: 0.5rem;
 }
+main .insights .middle .left h2{
+    color: var(--color-dark);
+}
+
 
 main .insights .expanses span {
     color: var(--color-white);
@@ -427,7 +455,7 @@ main .recent_order a {
 }
 
 .right .top {
-     margin-bottom: 1rem;
+    margin-bottom: 1rem;
     display: flex;
     justify-content: end;
     gap: 1rem;
@@ -439,7 +467,8 @@ main .recent_order a {
 
 .right .top .toggle_theme {
     display: flex;
-    background-color: var(--color-light);
+    background-color: var(--color-dark);
+    color: var(--color-dark-light);
     justify-content: space-between;
     align-items: center;
     text-align: center;
@@ -449,7 +478,7 @@ main .recent_order a {
 }
 
 .right .top .toggle_theme span {
-   height: 100%;
+    height: 100%;
     width: 50%;
     font-size: 1.6rem;
 }
@@ -459,98 +488,275 @@ main .recent_order a {
     color: white;
     border-radius: var(--border-radius-1);
 }
-.right .top .user{
+
+.right .top .user {
     display: flex;
     gap: 2rem;
-   
-   
+
+
 }
-.right .recent_update h1{
-        margin: 1.5rem;
+
+.right .recent_update h1 {
+    margin: 1.5rem;
 }
-.right .recent_update .updates{
+
+.right .recent_update .updates {
     background-color: var(--color-white);
     border-radius: var(--card-border-radius);
     padding: 1rem;
     box-shadow: var(--box-shadow);
     transition: all 300ms ease;
-   
+
 }
-.right .recent_update .updates:hover{
+
+.right .recent_update .updates:hover {
     box-shadow: none;
 }
-.right .recent_update .updates .update{
+
+.right .recent_update .updates .update {
     display: flex;
     height: 3rem;
-    justify-content:flex-start;
+    justify-content: flex-start;
     align-items: flex-start;
     margin-bottom: 1.5rem;
-  
+
 }
-.right .recent_update .updates .update .img_profile{
+
+.right .recent_update .updates .update .img_profile {
     width: 5rem;
-    
+
     text-align: center;
 }
-.right .recent_update .updates .update .img_profile img{
+
+.right .recent_update .updates .update .img_profile img {
     width: 50%;
-  
+
 }
+
 .right .recent_update .updates .update .info {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    
+
 }
+
 /* END update Users */
-.sales_analytices{
+.sales_analytices {
     margin-top: 1.5rem;
 }
-.sales_analytices h1{
+
+.sales_analytices h1 {
     margin-bottom: 1.25rem;
 }
-.sales_analytices .item{
+
+.sales_analytices .item {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--color-white);
-    padding: 1rem ;
+    padding: 1rem;
     margin-bottom: 1.5rem;
     border-radius: var(--border-radius-2);
     height: 5rem;
     box-shadow: var(--box-shadow);
     transition: all 3000ms ease;
 }
-.sales_analytices .item:hover{
+
+.sales_analytices .item:hover {
     box-shadow: none;
 }
-.sales_analytices .item .icon{
-    
+
+.sales_analytices .item .icon {
+
     border-radius: var(--card-border-radius);
     padding: 0.5rem;
     color: var(--color-white);
     text-align: center;
 }
-.sales_analytices .item .icon.online{
+
+.sales_analytices .item .icon.online {
     background-color: var(--color-primary);
 }
-.sales_analytices .item .icon.offline{
+
+.sales_analytices .item .icon.offline {
     background-color: var(--color-danger);
 }
-.sales_analytices .item .icon.customer{
+
+.sales_analytices .item .icon.customer {
     background-color: var(--color-success);
 }
-.sales_analytices .item .info h2{
+
+.sales_analytices .item .info h2 {
     font-weight: 700;
     margin-bottom: 0.5rem;
-  
+
 }
 
-.sales_analytices .item.new_product{
+.sales_analytices .item.new_product {
     border: 3px dashed var(--color-primary);
-   justify-content: center;
+    justify-content: center;
 }
-.sales_analytices .item .icon{
+
+.sales_analytices .item .icon {
     color: var(--color-dark-info);
-    
+
+}
+
+/* media for tapleat */
+
+@media screen and (max-width:1200px) {
+    .container {
+        width: 94%;
+        grid-template-columns: 7rem auto 24rem;
+    }
+
+   aside .top .logo h2 {
+        display: none;
+      
+    }
+  
+    aside .sidebar a h2{
+        display: none;
+    }
+    aside .sidebar a{
+        width: 7rem;
+    }
+    main .sidebar a:last-child{
+        position: relative;
+        margin-top: 4;
+    }
+  
+    main .insights{
+       
+        grid-template-columns: 1fr;
+        gap:0
+    }
+
+   
+    main .recent_order{
+        width: 93%;
+        position: absolute;
+        left: 5%;
+        margin-top: 2rem;
+        margin-left: 6.8rem;
+        
+    }
+
+    main .recent_order table{
+            width: 83vw;
+    }
+    main table thead tr th:first-child,
+    main table tbody tr td:last-child{
+        display: none;
+    }
+
+}
+/* media for mobile  */
+
+@media screen and (max-width:720px){
+    .container{
+        width: 100%;
+        grid-template-columns: 1fr;
+      
+    }
+    aside{
+        width: 15rem;
+        height: 100vh;
+        position: fixed;
+        z-index: 3;
+        background-color: var(--color-white);
+        box-shadow: 3px 2px 4px var(--color-dark-light);
+        left: -19px;
+        padding-left: var(--card-padding);
+        display: none;
+        animation: show_bar 300ms ease ;
+       
+    }
+    @keyframes show_bar{
+        to{
+            left: 0;
+        }
+    }
+
+    aside .top .logo h2{
+        display: inline;
+    }
+    aside .top .close_btn{
+        display: inline;
+        cursor: pointer;
+    }
+    aside .sidebar a{
+        width: 13rem;
+    }
+    aside .sidebar a h2{
+        display: inline;
+    }
+    main {
+        margin-top: 6rem;
+        padding: 0 1rem;
+    }
+    main .recent_order{
+        width: 100%;
+        position: relative;
+        margin-top: 3rem;
+        margin-left: 0;
+    }
+    main .recent_order table{
+        width: 80%;
+        margin: 0;
+    }
+    .right{
+        margin: 5rem auto;
+        width: 80%;
+        }
+        .right .top{
+            background-color: var(--color-white);
+            width: 100%;
+            padding: 2rem 0.8rem;
+            border-radius: var(--border-radius-1);
+            position: fixed;
+            z-index: 2;
+            height: 4.4rem;
+            top: 0;
+            left: 0;
+            align-items: center;
+            box-shadow:  1rem 1rem 3rem var(--color-dark-light);
+
+        }
+        .right .top .logo{
+                
+                position: relative;
+        }
+        .right .top .info{
+            display: none;
+        }
+        .right .top .toggle_theme{
+            position: absolute;
+            width: 5.5rem;
+            right: 9.5rem;
+        }
+        .right .top .user .user_img{
+            width: 69%;
+            text-align: end;
+        }
+        .right .top .user .user_img img{
+            width: 50%;
+        }
+        .right .top .toggle_menu{
+            display: inline;
+            position: absolute;
+            left: 0;
+            margin-left:2rem;
+            padding: 1rem;
+            cursor: pointer;
+           
+
+        }
+        .right .top .toggle_menu span{
+            color: var(--color-dark-varient);
+            font-size: 2rem;
+        }
+
+
+
 }
